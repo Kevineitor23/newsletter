@@ -17,7 +17,7 @@ def newsletter_signup(request):
 
         else:
             instance.save()
-            messages.success(request, 'Hemos enviado un correo electronico a su correo, abrelo para continuar con el entrenamiento')
+            messages.success(request, 'Hemos enviado un correo electronico a su correo, abrelo para continuar ')
             #Correo electronico
             subject="Libro de cocina"
             from_email=settings.EMAIL_HOST_USER
